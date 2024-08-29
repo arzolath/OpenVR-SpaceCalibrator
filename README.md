@@ -1,5 +1,7 @@
 # OpenVR Space Calibrator
 
+### This is a fork of [https://github.com/pushrax/OpenVR-SpaceCalibrator](pushrax's fork of OpenVR Space Calibrator). This version is aiming aowards making the tracking more refined and less noisy.
+
 This helps you use tracked VR devices from one company with any other. It aligns multiple tracking systems with a quick calibration step. It may not work for your setup, but there are many cases that work to a degree, and some work very well.
 
 - Rift CV1 x Vive devices: works very well with the v2 (blue logo) trackers, v1 trackers (grey logo, not in production) have major interference issues in the IR spectrum, controller wands (both gen) and Index controllers work very well.
@@ -7,13 +9,9 @@ This helps you use tracked VR devices from one company with any other. It aligns
 - Quest wireless streaming is particularly bad right now and requires frequent recalibration, but it does work for a short time until one of many factors causes it to drift. With wireless devices, moving slowly when calibrating and using the Slow or Very Slow calibration modes is effective at reducing the initial error.
 - Any non-Rift HMD x Touch controllers: does not work, the Oculus driver requires the HMD is a Rift. It's theoretically possible to work around this in software but as far as I know it hasn't been done as it would require a fair amount of reverse engineering effort.
 
-There is a community of a few thousand on [**Discord**](https://discord.gg/m7g2Wyj) and a newer community on [**Reddit**](https://www.reddit.com/r/MixedVR/). You may find the answer to your question in [the **wiki**](https://github.com/pushrax/OpenVR-SpaceCalibrator/wiki).
-
-A quick video of how this works using an old version (~v0.3) is available at https://www.youtube.com/watch?v=W3TnQd9JMl4. The user interface has been upgraded since then; the calibration is now done via a SteamVR dashboard menu, and there's much more configurability.
-
 ### Install
 
-Before following the directions below, download and run the installer for the [latest release](https://github.com/pushrax/OpenVR-SpaceCalibrator/releases). This will automatically set up SteamVR for use with multiple tracking systems (`activateMultipleDrivers: true`). There are many guides that say you need to edit the SteamVR config manually. You do not.
+Before following the directions below, download and run the installer for the [latest release](https://github.com/arzolath/OpenVR-SpaceCalibrator/releases). This will automatically set up SteamVR for use with multiple tracking systems (`activateMultipleDrivers: true`). There are many guides that say you need to edit the SteamVR config manually. You do not.
 
 ### Usage
 
@@ -44,9 +42,5 @@ You can calibrate without using the dashboard overlay by unminimizing Space Cali
 
 ### Compiling your own build
 
-Open `OpenVR-SpaceCalibrator.sln` in Visual Studio 2017 and build. There are no external dependencies.
+Open `OpenVR-SpaceCalibrator.sln` in Visual Studio 2022 and build. There are no external dependencies.
 
-### The math
-
-See [math.pdf](https://github.com/pushrax/OpenVR-SpaceCalibrator/blob/master/math.pdf) for details.
-If you have some ideas for how to improve the calibration process, let me know!
