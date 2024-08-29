@@ -1,6 +1,6 @@
 # OpenVR Space Calibrator
 
-### This is a fork of [https://github.com/pushrax/OpenVR-SpaceCalibrator](pushrax's fork of OpenVR Space Calibrator). This version is aiming aowards making the tracking more refined and less noisy.
+### This is a fork of [pushrax's fork of OpenVR Space Calibrator](https://github.com/pushrax/OpenVR-SpaceCalibrator). This version is aiming aowards making the tracking more refined and less noisy.
 
 This helps you use tracked VR devices from one company with any other. It aligns multiple tracking systems with a quick calibration step. It may not work for your setup, but there are many cases that work to a degree, and some work very well.
 
